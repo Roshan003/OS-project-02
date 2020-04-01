@@ -9,3 +9,16 @@ public class MultiThread {
 		System.out.print("Enter the number of elements :");
 		n = s.nextInt();
 		arr = new int[n];
+		System.out.println("Enter the elements :");
+		for (int i = 0; i < n; i++)
+			arr[i] = s.nextInt();
+		Thread avgThread = new Thread(new Runnable() {
+			@Override
+			public void run() {
+		double avg = 0;
+				for (int i = 0; i < n ; i++)
+					avg += arr[i];
+				avg = avg / n;
+		avgs[0] = avg;
+			}
+		});
