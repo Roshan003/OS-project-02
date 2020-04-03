@@ -22,7 +22,7 @@ public class MultiThread {
 		avgs[0] = avg;
 			}
 		});
-Thread minThread = new Thread(new Runnable() {
+ Thread minThread = new Thread(new Runnable() {
 			@Override
 			public void run() {
 				int min = arr[0];
