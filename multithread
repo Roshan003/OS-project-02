@@ -32,3 +32,18 @@ public class MultiThread {
 				minmax[0] = min;
 			}
 		});
+avgThread.start();
+		minThread.start();
+		maxThread.start();
+	try {
+		avgThread.join();
+		minThread.join();
+		maxThread.join();
+	}
+	catch (Exception e) {
+	}
+   
+		System.out.println("Avarage Value :" + avgs[0] + "\n"+ "Minimum Value : " + minmax[0] + "\n" + "Maximum Value : " + minmax[1]);
+	 }
+	 
+}
