@@ -32,7 +32,7 @@ public class MultiThread {
 				minmax[0] = min;
 			}
 		});
-avgThread.start();
+                avgThread.start();
 		minThread.start();
 		maxThread.start();
 	try {
